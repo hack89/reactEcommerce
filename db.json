@@ -1,0 +1,28 @@
+{
+    "products": [{
+            "id": 0,
+            "name": "Red Hoody",
+            "image": "https://www.zeuscalabria.it/10995-large_default/adidas-felpa-trefoil-oversized-uomo-rossa.jpg",
+            "price": 12
+
+        },
+        {
+            "id": 1,
+            "name": "Blue Hoody",
+            "image": "https://s3-eu-west-1.amazonaws.com/images.linnlive.com/5700a9add8d374680562798fca5633f9/5dc1a9fc-9069-42b5-bfc0-6e31ada9175e.jpg",
+            "price": 19
+        },
+        {
+            "id": 2,
+            "name": "Green Hoody",
+            "image": "https://i.ebayimg.com/images/g/7TsAAOSwtgNdys~m/s-l300.jpg",
+            "price": 22
+        },
+        {
+            "id": 3,
+            "name": "Purple Hoody",
+            "image": "https://cdn.idealo.com/folder/Product/5977/8/5977826/s10_produktbild_gross/adidas-originals-trefoil-hoodie-women.jpg",
+            "price": 82
+        }
+    ]
+}

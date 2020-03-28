@@ -1,0 +1,34 @@
+.container2,
+.cartHeader {
+    display: grid;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr) !important;
+    align-items: center;
+}
+
+.container2 .image {
+    padding: 6px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .image img {
+    width: 100%;
+}
+
+.cartHeader {
+    text-align: center;
+}
+
+#removeBtn {
+    position: absolute;
+    left: 4px;
+    top: 50%;
+}

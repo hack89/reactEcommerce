@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
+    grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+
+.container .image {
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid rgb(117, 168, 202);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .image img {
+    width: 100%;
+    min-height: 220px;
+}
+
+header {
+    margin-bottom: 50px;
+    position: relative;
+    height: 150px;
+    padding: 30px 0;
+    background-image: url('https://images.unsplash.com/photo-1584985598389-3a36cb7aa1c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 60px;
+}
+
+nav .logo {
+    border: 4px solid black;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 550;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+nav ul li:not(:last-child) {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.addToCart {
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    background-color: rgb(117, 168, 202);
+    padding: 8px;
+    border-radius: 18px;
+}
+
+.addToCart:hover {
+    animation: pulse 2s linear infinite;
+    box-shadow: 0 0 0 10px rgba(117, 168, 202, .2), 0 0 0 30px rgba(117, 168, 202, .2), 0 0 0 50px rgba(117, 168, 202, .2);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(117, 168, 202, .2), 0 0 0 10px rgba(117, 168, 202, .2), 0 0 0 30px rgba(117, 168, 202, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgba(117, 168, 202, .2), 0 0 0 40px rgba(117, 168, 202, .2), 0 0 0 50px rgba(117, 168, 202, 0);
+    }
+}
